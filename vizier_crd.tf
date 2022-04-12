@@ -269,13 +269,5 @@ resource "kubernetes_manifest" "customresourcedefinition_viziers_px_dev" {
         },
       ]
     }
-    "status" = {
-      "acceptedNames" = {
-        "kind"   = ""
-        "plural" = ""
-      }
-      "conditions"     = []
-      "storedVersions" = []
-    }
   }
 }
