@@ -1,6 +1,6 @@
 # terraform-pixie
 
-A terraform-ized version of <https://github.com/pixie-io/pixie>, generated from
+A terraform-ized version of <https://github.com/pixie-io/pixie>.
 
 ## Requirements
 
