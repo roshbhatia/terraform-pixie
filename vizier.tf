@@ -8,13 +8,13 @@ resource "kubernetes_manifest" "vizier_pl_pixie" {
     }
     "spec" = {
       "cloudAddr"   = "withpixie.ai:443"
-      "clusterName" = "docker-desktop"
+      "clusterName" = var.cluster_name
       "dataAccess"  = "Full"
       "dataCollectorParams" = {
         "datastreamBufferSize"      = 1048576
         "datastreamBufferSpikeSize" = 524288000
       }
-      "deployKey"         = "px-dep-d2b79fee-2b60-4285-82c6-2306b0a8dd93"
+      "deployKey"         = var.deploy_key
       "disableAutoUpdate" = false
       "useEtcdOperator"   = false
       "version"           = "0.10.7"
